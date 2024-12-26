@@ -9,8 +9,8 @@ from .utils import loading as loading_utils
 
 # Get the directory of the current file and add it to the system path
 current_file_directory = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(current_file_directory)
-
+# sys.path.append(current_file_directory)
+sys.path.insert(0, current_file_directory)
 import filmgrainer.filmgrainer as filmgrainer
 
 # Create the directory for the LUTs
